@@ -8,4 +8,9 @@ im = Image.open("./images/ascii-pineapple.jpg")
 
 data = asarray(im)
 print(type(data))
-print(data)
+print(data[0][0])
+
+for x in range(len(data)):
+    for y in range(len(data[x])):
+        pixel = data[x][y]
+        
